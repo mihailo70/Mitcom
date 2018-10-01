@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+	<head>
+		
+		<link rel="stylesheet" href="../css/book1.css" />
+		<link rel="stylesheet" href="../css/animate.css"/>
+		<link rel="stylesheet" href="../css/prmenu.css"/>
+		<link rel="stylesheet" href="../css/dynamic.css"/>
+		<link rel="icon" type="image/png" sizes="16x16" href="../images/mitcoms.png"/>
+		<link href="https://unpkg.com/ionicons@4.4.2/dist/css/ionicons.min.css" rel="stylesheet"/>
+		<title>Services</title> 
+		<meta name ="Keywords" content= "mitcom knjigovodstvo, pantheon knjigovodstvo, računovodstvo, knjigovodstvo Novi Beograd"/>
+		<meta name = "description" content= "Agency for Accounting and Informatics 24 years of experience"/>
+		<meta charset = "UTF-8"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="../js/jquery.prmenu.js"></script>
+		
+		<script>
+			$(document).ready(function(){
+			  $('#top-menu').prmenu({
+				  "fontsize": "14",
+					"height": "50",
+					"case": "capitalize",
+					"linkbgcolor": "#286090",
+					"linktextcolor": "#ffffff",
+					"linktextweight": "400",
+					"linktextfont": "sans-serif",
+					"hoverdark": false
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<a name = "top1"></a>
+		<div id="main_frame" >
+			<header>
+			<div id="header1">	
+				<div class="logo">
+					<img src="../images/Untitled.png" alt="Untitled" />
+				</div>
+				<div id ="title">
+					<h1>Bookkeeping &amp Informatics </h1>
+				</div>
+				<div class="language">
+					<script>
+						const contextmenu ={
+								leng:['SR','EN','DE'],
+								image:['../images/sr.png','../images/en.gif','../images/de.png'],
+								ind:['index.html','index.html','index.html']
+							}	;					
+						
+						//function for all <ul>
+						function write_manu(){ 
+							document.write('<ul>');
+							for (var i=0; i<contextmenu.leng.length;i++){
+								if(contextmenu.image.length==0){
+									document.write(`<li class="d${i}"><a href="${contextmenu.ind[i]}">${contextmenu.leng[i]}</a></li>`);
+								}else{
+									document.write(`<li><a href="${contextmenu.ind[i]}"><img  src="${contextmenu.image[i]}" alt="${contextmenu.leng[i]}" />${contextmenu.leng[i]}</a></li>`);
+								}
+							};
+							document.write('</ul>');
+						};
+						write_manu();
+						
+					</script>
+							
+				</div><!--end language-->
+				<div id="search">
+					<input type="search" name="search" />
+					<button type="button" name="button_search" onclick="Search()" >Search 
+					</button>	
+				
+				</div>
+				<script>
+				
+				
+				//change color for h1
+					$(function(){
+						$('h1').mouseover(function(){
+							$(this).css('color','black').css('text-shadow','3px 3px 5px black');
+							});
+						}
+					);
+					$(function(){
+						$('h1').mouseout(function(){
+							$(this).css('background','none').css('color','white').css('text-shadow','none'); 
+							});
+						}
+					);
+				</script>
+			</div><!--end header1-->
+			<div id="header2">			
+				<div id="prmenu_containerr">
+					<ul id="top-menu">
+						<li class="home1" ><a href = "../index.html" title ="Home">Home</a>
+						</li>
+						<li class="about1" ><a href="../pages/AboutUs.html">About us</a>
+							<ul>
+								
+								<script>
+									contextmenu.leng=['Where we are','Why choose just us','Experience','Gallery'];
+									contextmenu.ind=['../pages/find us.html','#','#','../pages/gallery.html'];
+									contextmenu.image=[];
+									write_manu();
+								</script>
+							</ul>
+						</li>
+						<li class="service1"><a href="../pages/Services.html">Services</a>
+							<ul>
+								<script>
+									contextmenu.leng=['Keeping business books','Tax and business counseling','Human resorce','Complete Business IT Support','Lawyer help'];
+									contextmenu.ind=['#','#','#','#','#'];
+									contextmenu.image=[];
+									write_manu();
+								</script>
+							</ul>
+						</li>
+						<li class="download1"><a href="#">Downloads</a>
+							<ul>
+								<script>
+									contextmenu.leng=['Laws &amp Regulations','International Accountings'];
+									contextmenu.ind=['#','#','#'];
+									contextmenu.image=[];
+									write_manu();
+								</script>
+							</ul>
+						</li>
+						<li class="contact1"><a href="../pages/contact.html">Contact us</a></li>
+						<li class="popular1"><a href="#">Popular</a>
+							<ul>
+								<script>
+									contextmenu.leng=['Tax calendar','Ask us'];
+									contextmenu.ind=['#','#','#'];
+									contextmenu.image=[];
+									write_manu();
+								</script>
+							</ul>
+						</li>
+					</ul>
+				</div><!--prmenu_containerr-->
+			</div>	<!--header2-->		
+			</header>	
+			
+			
+			<div class="blog">
+					<a href='#'><h1>Services</h1></a>
+					
+					<div class='p_text'>
+						<p>We are a company that gives special attention to knowledge and responsibility. The slogan "TEAM EXPERTS FOR YOUR SWEET DREAMS", which we proudly use, has been compiled by our long-standing partners. The team fosters the combination of the experience of the older generation with the energy of youth.
+						<br>For many years, when making decisions, we work closely with the Advisors:<br/>
+						</p>	
+						<div id="bl1">
+							<div id="p1">
+								<a href="http://www.apr.gov.rs/" target="_blank">Agencija za privredne registre</a>
+								<img title="Agencija za privredne registre" src="../images/yootheme/aprlogo.gif" alt="aprlogo" />
+							</div>
+							<div id="p2">
+								<a href="http://www.paragraf.rs/" target="_blank">Paragraf</a>
+								<img title="Paragraf" src="../images/3.JPG" alt="Paragraf" />
+							</div>	
+							<div id="p3">
+								<a href="http://www.poreskauprava.gov.rs/" target="_blank">Poreska uprava</a>
+								<img title="Poreska uprava" src="../images/yootheme/MF_logo1.gif" alt="Poreska uprava" />
+							</div>		
+							<div id="p4">
+								<a href="http://www.pks.rs/" target="_blank">Privredna komora</a>
+								<img title="Privredna komora" src="../images/yootheme/logo1.png" alt="Privredna komora" />
+							</div>		
+						</div>
+						
+					</div>
+			</div>
+			<div class="blog">
+					<div class='p_text'>
+						<p>In writing the rules as well as the interpretation of the law, we consult with several renowned lawyers and audit firms
+						<br>Each client signs the Contract for at least 12 months. There is a possibility of termination of cooperation if the provisions of the Contract are grossly violated. Billing is on the 15th of the month for the current month with a currency clause.
+						<br>Our position is that the price of the service will be less than the price of a bookkeeper who would be employed by you. You get expert support for the agreed price. Support can be electronically, by telephone or through an organized conversation with us or you.
+						</p>
+</div>
+			</div>
+			<div class="blog">
+					<div class='p_text'>
+						<p>We are able to offer you a truly wide range of services:<br>
+      • 				Bookkeeping
+      • 				Assigning a client's status to the Tax Administration<br>
+      • 				Book keeping according to international accounting standards for medium and large enterprises<br>
+      • 				Administrative affairs, registrations and applications<br>
+      • 				Calculation of earnings, fees and other types of income<br>
+      • 				Business consulting<br>
+      • 				Tax counseling<br>
+      • 				Drafting the Rules<br>
+      • 				Training of employees on various issues<br>
+      • 				IT Training, maintenance,<br>
+      • 				Pantheon,<br>
+      • 				MS Navision and more</p><br>
+					</div>
+			</div>
+			<div class="blog">
+					<div class='p_text'>
+						<p>Documentation can be kept with the client or with us. A database and files are opened for the client. They are sent to the client
+							excerpts from the law, payroll calculations, tax returns, VAT returns, KIR, KPR in PDF format. All documents are also stored in our electronic file format.
+
+						<br>If a client owns his own program, posting and controlling can be done by Remote access</p>
+					</div>
+			</div>
+			<footer>
+				<script>
+					contextmenu.leng=['Home','About us','Services','Downloads','Contact','Popular'];
+					contextmenu.ind=['../index.html','../pages/AboutUs.html','../pages/Services.html','#','../pages/contact.html','#'];
+					contextmenu.image=[];
+					write_manu();
+				</script>
+			
+				<h2>Copyright © 2018 Mitcom Accounting &amp; IT - Agency for Accounting and Informatics  <br/>
+					<a title="Web designer" href="http://www.skolawizard.rs/" target="_blank">Wizard</a>
+					<div id="top">
+						<a href ="#top1" title="Back to top">
+						<img title="Back to top" src="../images/arrowTop.jpg" alt="Go top" />
+						</a> 
+					</div>
+				</h2>
+			</footer>
+		</div><!--end main_frame-->
+		
+		
+	</body>
+</html>

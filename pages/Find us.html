@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+	<head>
+		
+		<link rel="stylesheet" href="../css/book1.css" />
+		<link rel="stylesheet" href="../css/animate.css"/>
+		<link rel="stylesheet" href="../css/prmenu.css"/>
+		<link rel="stylesheet" href="../css/dynamic.css"/>
+		<link rel="icon" type="image/png" sizes="16x16" href="../images/mitcoms.png"/>
+		<link href="https://unpkg.com/ionicons@4.4.2/dist/css/ionicons.min.css" rel="stylesheet"/>
+		<title>Where we are</title> 
+		<meta name ="Keywords" content= "mitcom knjigovodstvo, pantheon knjigovodstvo, računovodstvo, knjigovodstvo Novi Beograd"/>
+		<meta name = "description" content= "Agency for Accounting and Informatics 24 years of experience"/>
+		<meta charset = "UTF-8"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="../js/jquery.prmenu.js"></script>
+		
+		<script>
+			$(document).ready(function(){
+			  $('#top-menu').prmenu({
+				  "fontsize": "14",
+					"height": "50",
+					"case": "capitalize",
+					"linkbgcolor": "#286090",
+					"linktextcolor": "#ffffff",
+					"linktextweight": "400",
+					"linktextfont": "sans-serif",
+					"hoverdark": false
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<a name = "top1"></a>
+		<div id="main_frame" >
+			<header>
+			<div id="header1">	
+				<div class="logo">
+					<img src="../images/Untitled.png" alt="Untitled" />
+				</div>
+				<div id ="title">
+					<h1>Bookkeeping &amp Informatics </h1>
+				</div>
+				<div class="language">
+					<script>
+						const contextmenu ={
+								leng:['SR','EN','DE'],
+								image:['../images/sr.png','../images/en.gif','../images/de.png'],
+								ind:['index.html','index.html','index.html']
+							}	;					
+						
+						//function for all <ul>
+						function write_manu(){ 
+							document.write('<ul>');
+							for (var i=0; i<contextmenu.leng.length;i++){
+								if(contextmenu.image.length==0){
+									document.write(`<li class="d${i}"><a href="${contextmenu.ind[i]}">${contextmenu.leng[i]}</a></li>`);
+								}else{
+									document.write(`<li><a href="${contextmenu.ind[i]}"><img  src="${contextmenu.image[i]}" alt="${contextmenu.leng[i]}" />${contextmenu.leng[i]}</a></li>`);
+								}
+							};
+							document.write('</ul>');
+						};
+						write_manu();
+						
+						
+					</script>
+							
+				</div><!--end language-->
+				<div id="search">
+					<input type="search" name="search" />
+					<button type="button" name="button_search" onclick="Search()" >Search 
+					</button>	
+				
+				</div>
+				<script>
+				
+				
+				//change color for h1
+					$(function(){
+						$('h1').mouseover(function(){
+							$(this).css('color','black').css('text-shadow','3px 3px 5px black');
+							});
+						}
+					);
+					$(function(){
+						$('h1').mouseout(function(){
+							$(this).css('background','none').css('color','white').css('text-shadow','none'); 
+							});
+						}
+					);
+				</script>
+			</div><!--end header1-->
+			<div id="header2">			
+				<div id="prmenu_containerr">
+					<ul id="top-menu">
+						<li class="home1" ><a href = "../index.html" title ="Home">Home</a>
+						</li>
+						<li class="about1" ><a href="../pages/AboutUs.html">About us</a>
+							<ul>
+								
+								<script>
+									contextmenu.leng=['Where we are','Why choose just us','Experience','Gallery'];
+									contextmenu.ind=['../pages/find us.html','#','#','../pages/gallery.html'];
+									contextmenu.image=[];
+									write_manu();
+								</script>
+							</ul>
+						</li>
+						<li class="service1"><a href="../pages/Services.html">Services</a>
+							<ul>
+								<script>
+									contextmenu.leng=['Keeping business books','Tax and business counseling','Human resorce','Complete Business IT Support','Lawyer help'];
+									contextmenu.ind=['#','#','#','#','#'];
+									contextmenu.image=[];
+									write_manu();
+								</script>
+							</ul>
+						</li>
+						<li class="download1"><a href="#">Downloads</a>
+							<ul>
+								<script>
+									contextmenu.leng=['Laws &amp Regulations','International Accountings'];
+									contextmenu.ind=['#','#','#'];
+									contextmenu.image=[];
+									write_manu();
+								</script>
+							</ul>
+						</li>
+						<li class="contact1"><a href="../pages/contact.html">Contact us</a></li>
+						<li class="popular1"><a href="#">Popular</a>
+							<ul>
+								<script>
+									contextmenu.leng=['Tax calendar','Ask us'];
+									contextmenu.ind=['#','#','#'];
+									contextmenu.image=[];
+									write_manu();
+								</script>
+							</ul>
+						</li>
+					</ul>
+				</div><!--prmenu_containerr-->
+			</div>	<!--header2-->		
+			</header>	
+			
+			<div class="blog">
+					<a href='#'><h1>Where we are</h1></a>
+					<h1>A map: Novi Beograd, Gandijeva 76a L63-65</h1>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.708696892997!2d20.380478815367248!3d44.807124985066245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a6f70e266f579%3A0x578d3179ce5e404f!2z0JPQsNC90LTQuNGY0LXQstCwIDc2YSwg0JHQtdC-0LPRgNCw0LQ!5e0!3m2!1ssr!2srs!4v1536748208397" width="80%" height="650" frameborder="0" style="border:0" allowfullscreen></iframe>
+				
+					
+			</div>
+			
+		</div><!--body cont-->	
+			
+			<footer>
+				<script>
+					contextmenu.leng=['Home','About us','Services','Downloads','Contact','Popular'];
+					contextmenu.ind=['../index.html','../pages/AboutUs.html','../pages/Services.html','#','../pages/contact.html','#'];
+					contextmenu.image=[];
+					write_manu();
+				</script>
+			
+				<h2>Copyright © 2018 Mitcom Accounting &amp; IT - Agency for Accounting and Informatics  <br/>
+					<a title="Web designer" href="http://www.skolawizard.rs/" target="_blank">Wizard</a>
+					<div id="top">
+						<a href ="#top1" title="Back to top">
+						<img title="Back to top" src="../images/arrowTop.jpg" alt="Go top" />
+						</a> 
+					</div>
+				</h2>
+			</footer>
+		</div><!--end main_frame-->
+		
+		
+	</body>
+</html>
