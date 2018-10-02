@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="../css/dynamic.css"/>
 		<link rel="icon" type="image/png" sizes="16x16" href="../images/mitcoms.png"/>
 		<link href="https://unpkg.com/ionicons@4.4.2/dist/css/ionicons.min.css" rel="stylesheet"/>
-		<title>Bookkeeping</title> 
+		<title>Vat Services</title> 
 		<meta name ="Keywords" content= "mitcom knjigovodstvo, pantheon knjigovodstvo, računovodstvo, knjigovodstvo Novi Beograd"/>
 		<meta name = "description" content= "Agency for Accounting and Informatics 24 years of experience"/>
 		<meta charset = "UTF-8"/>
@@ -46,7 +46,7 @@
 						const contextmenu ={
 								leng:['SR','EN','DE'],
 								image:['../images/sr.png','../images/en.gif','../images/de.png'],
-								ind:['index.html','index.html','index.html']
+								ind:['../index.html','../index.html','../index.html']
 							}	;					
 						
 						//function for all <ul>
@@ -63,6 +63,8 @@
 						};
 						write_manu();
 						
+						
+						
 					</script>
 							
 				</div><!--end language-->
@@ -78,13 +80,13 @@
 				//change color for h1
 					$(function(){
 						$('h1').mouseover(function(){
-							$(this).css('color','black').css('text-shadow','3px 3px 5px black');
+							$(this).css('color','black').css('text-shadow','3px 3px 5px white');
 							});
 						}
 					);
 					$(function(){
 						$('h1').mouseout(function(){
-							$(this).css('background','none').css('color','white').css('text-shadow','none'); 
+							$(this).css('background','none').css('color','white').css('text-shadow','3px 3px 5px black'); 
 							});
 						}
 					);
@@ -100,17 +102,17 @@
 								
 								<script>
 									contextmenu.leng=['Where we are','Why choose just us','Experience','Gallery'];
-									contextmenu.ind=['../pages/find us.html','../pages/biography.html','../pages/experience.html','../pages/gallery.html'];
+									contextmenu.ind=['find us.html','biography.html','experience.html','gallery.html'];
 									contextmenu.image=[];
 									write_manu();
 								</script>
 							</ul>
 						</li>
-						<li class="service1"><a href="../pages/Services.html">Services</a>
+						<li class="service1"><a href="Services.html">Services</a>
 							<ul>
 								<script>
 									contextmenu.leng=['Keeping business books','Tax and business counseling','Human resorce','Complete Business IT Support','Lawyer help'];
-									contextmenu.ind=['#','#','#','#','#'];
+									contextmenu.ind=['bookkeepMRS.html','taxconsult.html','hr.html','ITServ.html','LawServ.html'];
 									contextmenu.image=[];
 									write_manu();
 								</script>
@@ -120,7 +122,7 @@
 							<ul>
 								<script>
 									contextmenu.leng=['Laws &amp Regulations','International Accountings'];
-									contextmenu.ind=['#','#','#'];
+									contextmenu.ind=['dow_law.html','dow_inter.html'];
 									contextmenu.image=[];
 									write_manu();
 								</script>
@@ -131,7 +133,7 @@
 							<ul>
 								<script>
 									contextmenu.leng=['Tax calendar','Ask us'];
-									contextmenu.ind=['#','#','#'];
+									contextmenu.ind=['vat_calend.html','contact.html'];
 									contextmenu.image=[];
 									write_manu();
 								</script>
@@ -139,8 +141,9 @@
 						</li>
 					</ul>
 				</div><!--prmenu_containerr-->
-			</div>	<!--header2-->		
+			</div>	<!--header2-->	
 			</header>	
+			
 			
 			<div class="blog">
 					<a href='#'><h1>Tax and business counseling</h1></a>

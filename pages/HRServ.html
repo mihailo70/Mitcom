@@ -1,75 +1,150 @@
 <!doctype html>
 <html>
 	<head>
-		<!--for icon on tab go to Facicon-generator-->
-		<!--ionicons.com usage -->
-		<link href="https://unpkg.com/ionicons@4.4.2/dist/css/ionicons.min.css" rel="stylesheet">
 		
-		<title>Mitcom - HR services</title> 
-		<link rel="stylesheet" href="../css/book.css" />
+		<link rel="stylesheet" href="../css/book1.css" />
+		<link rel="stylesheet" href="../css/animate.css"/>
+		<link rel="stylesheet" href="../css/prmenu.css"/>
+		<link rel="stylesheet" href="../css/dynamic.css"/>
+		<link rel="icon" type="image/png" sizes="16x16" href="../images/mitcoms.png"/>
+		<link href="https://unpkg.com/ionicons@4.4.2/dist/css/ionicons.min.css" rel="stylesheet"/>
+		<title>HR Services</title> 
 		<meta name ="Keywords" content= "mitcom knjigovodstvo, pantheon knjigovodstvo, računovodstvo, knjigovodstvo Novi Beograd"/>
 		<meta name = "description" content= "Agency for Accounting and Informatics 24 years of experience"/>
 		<meta charset = "UTF-8"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="../js/jquery.prmenu.js"></script>
 		
-		<link rel="icon" type="image/png" sizes="16x16" href="../images/mitcoms.png">
-
-			
+		<script>
+			$(document).ready(function(){
+			  $('#top-menu').prmenu({
+				  "fontsize": "14",
+					"height": "50",
+					"case": "capitalize",
+					"linkbgcolor": "#286090",
+					"linktextcolor": "#ffffff",
+					"linktextweight": "400",
+					"linktextfont": "sans-serif",
+					"hoverdark": false
+				});
+			});
+		</script>
 	</head>
 	<body>
-			<a name = "top1"></a>
-		
+		<a name = "top1"></a>
 		<div id="main_frame" >
 			<header>
-				<div class="language">
-					<p><a href="../index.html"><img  src="../images/sr.png" alt="SR" /></a>
-						<a href="../index.html"><img  src="../images/en.gif" alt="en"/></a>
-						<a href="../index.html"><img  src="../images/de.png" alt="de"/></a>
-					</p>		
-				</div><!--end language-->
-				<div class='logo'>
-					<p><img  src="../images/Untitled.png" alt="Untitled" >
+			<div id="header1">	
+				<div class="logo">
+					<img src="../images/Untitled.png" alt="Untitled" />
 				</div>
-				<div id ='title'>
+				<div id ="title">
 					<h1>Bookkeeping &amp Informatics </h1>
 				</div>
-				<div id="main_content">
-					<div id='home1'>
-						<a href = "../index.html" title ="Home"><i class="icon ion-md-home"></i>
-						 Home</a>
-					</div>
-					<div id='about1'>
-						<a href ="AboutUs.html" title="About us"><i class="icon ion-md-star"></i>
-						About us </a>
-					</div>
-					<div id='service1'>
-						<a href ="Services.html" title="Services"><i class="icon ion-md-build"></i>
-						Services </a>
-					</div>
-					<div id='download1'>
-						<a href ="#" title="Downloads"><i class="icon ion-md-download"></i>
-						Downloads </a> 
-					</div>
-					<div id='contact1'>
-						<a href ="contact.html" title="Contact"><i class="icon ion-md-call"></i>
-						Contact </a> 
-					</div>
-					<div id='actually1'>
-						<a href= "#" title="Popular"> <i class="icon ion-md-aperture"></i>
-						Popular </a> 
-					</div>	
-				</div><!--end main many-->
+				<div class="language">
 					<script>
-				
+						const contextmenu ={
+								leng:['SR','EN','DE'],
+								image:['../images/sr.png','../images/en.gif','../images/de.png'],
+								ind:['../index.html','../index.html','../index.html']
+							}	;					
+						
+						//function for all <ul>
+						function write_manu(){ 
+							document.write('<ul>');
+							for (var i=0; i<contextmenu.leng.length;i++){
+								if(contextmenu.image.length==0){
+									document.write(`<li class="d${i}"><a href="${contextmenu.ind[i]}">${contextmenu.leng[i]}</a></li>`);
+								}else{
+									document.write(`<li><a href="${contextmenu.ind[i]}"><img  src="${contextmenu.image[i]}" alt="${contextmenu.leng[i]}" />${contextmenu.leng[i]}</a></li>`);
+								}
+							};
+							document.write('</ul>');
+						};
+						write_manu();
+						
+						
+						
 					</script>
-				
+							
+				</div><!--end language-->
 				<div id="search">
 					<input type="search" name="search" />
 					<button type="button" name="button_search" onclick="Search()" >Search 
 					</button>	
 				
 				</div>
+				<script>
+				
+				
+				//change color for h1
+					$(function(){
+						$('h1').mouseover(function(){
+							$(this).css('color','black').css('text-shadow','3px 3px 5px white');
+							});
+						}
+					);
+					$(function(){
+						$('h1').mouseout(function(){
+							$(this).css('background','none').css('color','white').css('text-shadow','3px 3px 5px black'); 
+							});
+						}
+					);
+				</script>
+			</div><!--end header1-->
+			<div id="header2">			
+				<div id="prmenu_containerr">
+					<ul id="top-menu">
+						<li class="home1" ><a href = "../index.html" title ="Home">Home</a>
+						</li>
+						<li class="about1" ><a href="../pages/AboutUs.html">About us</a>
+							<ul>
+								
+								<script>
+									contextmenu.leng=['Where we are','Why choose just us','Experience','Gallery'];
+									contextmenu.ind=['find us.html','biography.html','experience.html','gallery.html'];
+									contextmenu.image=[];
+									write_manu();
+								</script>
+							</ul>
+						</li>
+						<li class="service1"><a href="Services.html">Services</a>
+							<ul>
+								<script>
+									contextmenu.leng=['Keeping business books','Tax and business counseling','Human resorce','Complete Business IT Support','Lawyer help'];
+									contextmenu.ind=['bookkeepMRS.html','taxconsult.html','hr.html','ITServ.html','LawServ.html'];
+									contextmenu.image=[];
+									write_manu();
+								</script>
+							</ul>
+						</li>
+						<li class="download1"><a href="#">Downloads</a>
+							<ul>
+								<script>
+									contextmenu.leng=['Laws &amp Regulations','International Accountings'];
+									contextmenu.ind=['dow_law.html','dow_inter.html'];
+									contextmenu.image=[];
+									write_manu();
+								</script>
+							</ul>
+						</li>
+						<li class="contact1"><a href="../pages/contact.html">Contact us</a></li>
+						<li class="popular1"><a href="#">Popular</a>
+							<ul>
+								<script>
+									contextmenu.leng=['Tax calendar','Ask us'];
+									contextmenu.ind=['vat_calend.html','contact.html'];
+									contextmenu.image=[];
+									write_manu();
+								</script>
+							</ul>
+						</li>
+					</ul>
+				</div><!--prmenu_containerr-->
+			</div>	<!--header2-->	
 			</header>	
+			
+			
 			<div class="blog">
 					<a href='#'><h1>Employee, Payroll calculation, employee registration and cancellation</h1></a>
 					
